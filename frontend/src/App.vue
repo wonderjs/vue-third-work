@@ -5,10 +5,10 @@
 </template>
 
 <script setup>
-import { AppLayout } from "@/layouts";
-import { HomeView } from "@/views";
+import { AppLayout } from '@/layouts';
+import { HomeView } from '@/views';
 </script>
 
 <style lang="scss">
-@use "@/assets/scss/app.scss";
+@use '@/assets/scss/app.scss';
 </style>

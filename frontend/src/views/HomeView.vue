@@ -100,11 +100,11 @@
 </template>
 
 <script setup>
-import columns from "../mocks/columns.json";
-import users from "../mocks/users.json";
-import rawTasks from "../mocks/tasks.json";
-import { normalizeTask, getTagsArrayFromString } from "@/common/helpers";
-import { STATUSES } from "@/common/constants";
+import columns from '../mocks/columns.json';
+import users from '../mocks/users.json';
+import rawTasks from '../mocks/tasks.json';
+import { normalizeTask, getTagsArrayFromString } from '@/common/helpers';
+import { STATUSES } from '@/common/constants';
 
 const getImage = (image) => {
   // https://vitejs.dev/guide/assets.html#new-url-url-import-meta-url
@@ -128,7 +128,7 @@ const columnTasks = normalizedTasks
 </script>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/app" as *;
+@use '@/assets/scss/app' as *;
 .test-token-check {
   color: $white-900;
 }
@@ -143,7 +143,7 @@ const columnTasks = normalizedTasks
 }
 
 .desk {
-  $bl: ".desk";
+  $bl: '.desk';
 
   display: flex;
   flex-direction: column;
@@ -194,9 +194,9 @@ const columnTasks = normalizedTasks
       width: 23px;
       height: 23px;
 
-      content: "";
+      content: '';
 
-      background-image: url("../img/icon-add.svg");
+      background-image: url('../img/icon-add.svg');
     }
   }
 
@@ -335,7 +335,7 @@ const columnTasks = normalizedTasks
       width: 16px;
       height: 16px;
 
-      background-image: url("@/assets/img/status-time.svg");
+      background-image: url('@/assets/img/status-time.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -344,7 +344,7 @@ const columnTasks = normalizedTasks
       width: 16px;
       height: 16px;
 
-      background-image: url("@/assets/img/status-alert.svg");
+      background-image: url('@/assets/img/status-alert.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -426,7 +426,7 @@ const columnTasks = normalizedTasks
 }
 
 .task {
-  $bl: ".task";
+  $bl: '.task';
 
   display: flex;
   flex-wrap: wrap;
@@ -517,7 +517,7 @@ const columnTasks = normalizedTasks
       width: 16px;
       height: 16px;
 
-      background-image: url("@/assets/img/status-time.svg");
+      background-image: url('@/assets/img/status-time.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -526,7 +526,7 @@ const columnTasks = normalizedTasks
       width: 16px;
       height: 16px;
 
-      background-image: url("@/assets/img/status-alert.svg");
+      background-image: url('@/assets/img/status-alert.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }
