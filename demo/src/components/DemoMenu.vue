@@ -6,14 +6,15 @@
         :key="index"
         :name="name"
         :text="text"
-        :link="path"/>
+        :link="path"
+      />
     </div>
   </div>
 </template>
 
 <script setup>
-import DemoMenuCard from './DemoMenuCard.vue'
-import routes from '../routes'
+import DemoMenuCard from './DemoMenuCard.vue';
+import routes from '../routes';
 </script>
 
 <style lang="scss" scoped>
