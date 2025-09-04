@@ -1,4 +1,4 @@
-@import 'ds-system/ds-system';
+@use 'ds-system/ds-system' as *;
 
 body {
   display: flex;

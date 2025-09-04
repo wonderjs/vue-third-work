@@ -1,4 +1,4 @@
-@import 'libs/normalize';
-@import 'scaffolding.scss';
-@import 'ds-system/ds-system';
-@import 'mixins/mixins';
+@use 'libs/normalize';
+@use 'scaffolding.scss';
+@forward 'ds-system/ds-system';
+@forward 'mixins/mixins';
