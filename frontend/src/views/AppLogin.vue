@@ -119,17 +119,20 @@ async function login() {
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/scss/app' as *;
+@use '@/assets/scss/ds-system/ds-colors';
+@use '@/assets/scss/ds-system/ds-variables';
+@use '@/assets/scss/ds-system/ds-typography';
+@use '@/assets/scss/mixins/m_center';
 
 .sign-form {
   display: block;
 
   width: 500px;
 
-  background-color: $white-900;
-  box-shadow: 0 4px 8px $shadow-500;
+  background-color: ds-colors.$white-900;
+  box-shadow: 0 4px 8px ds-colors.$shadow-500;
 
-  @include pf_center-all;
+  @include m_center.pf_center-all;
 
   &__shape {
     padding-right: 64px;
@@ -143,7 +146,7 @@ async function login() {
 
     padding: 25px;
 
-    background-color: $blue-600;
+    background-color: ds-colors.$blue-600;
   }
 
   &__title {
@@ -151,9 +154,9 @@ async function login() {
 
     text-align: center;
 
-    color: $blue-gray-600;
+    color: ds-colors.$blue-gray-600;
 
-    @include m-s24-h21;
+    @include ds-typography.m-s24-h21;
   }
 
   &__input {
@@ -175,7 +178,7 @@ async function login() {
   }
 
   &__link {
-    color: $blue-600;
+    color: ds-colors.$blue-600;
 
     &:hover {
       text-decoration: underline;
@@ -203,9 +206,9 @@ async function login() {
       height: 1px;
 
       content: '';
-      transition: background-color $animationSpeed;
+      transition: background-color ds-variables.$animationSpeed;
 
-      background-color: $white-900;
+      background-color: ds-colors.$white-900;
     }
 
     &::after {
@@ -227,6 +230,6 @@ async function login() {
 
 .server-error-message {
   margin-top: 20px;
-  color: $red-700;
+  color: ds-colors.$red-700;
 }
 </style>

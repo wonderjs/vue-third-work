@@ -1,14 +1,13 @@
 <template>
   <div class="text-field">
     <input
-      :value="modelValue"
+      v-model="input"
       :type="type"
       :name="name"
       class="text-field__input"
       :class="{ 'text-field__input--error': showError }"
       :placeholder="placeholder"
       :required="required"
-      @input="emit('update:modelValue', $event.target.value)"
     />
     <span v-if="showError" class="text-field__text">
       {{ errorText }}
@@ -63,7 +62,8 @@ const showError = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/scss/app' as *;
+@use '@/assets/scss/ds-system/ds-colors';
+@use '@/assets/scss/ds-system/ds-typography';
 
 .text-field {
   position: relative;
@@ -76,16 +76,16 @@ const showError = computed(() => {
     margin: 0;
     padding: 12px 16px;
 
-    color: $gray-900;
-    border: 1px solid $white-800;
+    color: ds-colors.$gray-900;
+    border: 1px solid ds-colors.$white-800;
     border-radius: 6px;
 
     &--error {
-      border-color: $red-600;
+      border-color: ds-colors.$red-600;
     }
 
     &:focus {
-      border-color: $blue-600;
+      border-color: ds-colors.$blue-600;
     }
   }
 
@@ -94,9 +94,9 @@ const showError = computed(() => {
     bottom: -12px;
     left: 0;
 
-    color: $red-600;
+    color: ds-colors.$red-600;
 
-    @include r-s10-h12;
+    @include ds-typography.r-s10-h12;
   }
 }
 </style>

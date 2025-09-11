@@ -23,7 +23,7 @@ export const useAuthStore = defineStore('auth', {
     async getMe() {
       this.user = await authService.whoAmI();
     },
-    async logout(sendRequest = true) {
+    async logout() {
       await authService.logout();
       this.user = null;
       removeToken();
